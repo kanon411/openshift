@@ -9,6 +9,7 @@ RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && unzip -o v2ray.zip \
  && chmod +x /v2raybin/v2ray \
  && rm -rf v2ray.zip \
+ && rm -rf config.json \
  && chgrp -R 0 /v2raybin \
  && chmod -R g+rwX /v2raybin 
  
